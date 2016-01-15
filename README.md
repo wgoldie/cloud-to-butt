@@ -1,7 +1,7 @@
 Drop The "Drop The 'The'"
 ================
 
-Chrome extension that rolls back "Facebook" to "The facebook"
+Chrome extension that rolls back "Facebook" to "The Facebook"
 
 ![](sean.jpeg)
 
