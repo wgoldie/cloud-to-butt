@@ -1,6 +1,11 @@
 window.onload = function () { walk(document.body); }
 
-// TODO: make this work on shitty webpages that load text in js
+// Make this work on shitty webpages that load text in js
+new MutationObserver(
+  function walkMutation(records, observer) {
+	  walk(document.body)
+  }
+).observe(document.body, { attributes:false, childList: true, characterData: true, subtree: true });
 
 function walk(node) 
 {
@@ -8,7 +13,6 @@ function walk(node)
 	// http://is.gd/mwZp7E
 	
 	var child, next;
-
 	switch ( node.nodeType )  
 	{
 		case 1:  // Element
@@ -22,7 +26,6 @@ function walk(node)
 				child = next;
 			}
 			break;
-
 		case 3: // Text node
 			handleText(node);
 			break;
