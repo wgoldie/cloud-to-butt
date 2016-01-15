@@ -1,4 +1,4 @@
-Drop The "Drop The "The""
+Drop The "Drop The 'The'"
 ================
 
 Chrome extension that rolls back "Facebook" to "The facebook"
