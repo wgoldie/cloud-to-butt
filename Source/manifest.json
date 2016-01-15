@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt",
+	"name": "Drop the \"Drop the \"The\"\"",
 	"version": "1.0",
-	"description": "Replaces the text 'the cloud' with 'my butt'.",
+	"description": "Changes \"Facebook\" to \"The Facebook\"",
 	"content_scripts": 
 	[
 		{
@@ -10,6 +10,9 @@
 			"js": ["content_script.js"],
 			"run_at": "document_end"
 		}
-	]
+	],
+	"icons": { "16": "napster-logo-16.png",
+			"48": "napster-logo-48.png",
+			"128": "napster-logo-128.png" }
 }
 

@@ -1,8 +1,10 @@
-walk(document.body);
+window.onload = function () { walk(document.body); }
+
+// TODO: make this work on shitty webpages that load text in js
 
 function walk(node) 
 {
-	// I stole this function from here:
+	// adapted from
 	// http://is.gd/mwZp7E
 	
 	var child, next;
@@ -30,13 +32,10 @@ function walk(node)
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
-
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	if(!v.match(/[Tt]he\s+[Ff]acebook/g)) {
+		v = v.replace( /\bFacebook/g, "The Facebook");
+		v = v.replace( /\bfacebook/g, "the facebook");
+	}
 	
 	textNode.nodeValue = v;
 }
-
-
