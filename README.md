@@ -1,11 +1,11 @@
-**THE** FACEBOOK
+Drop The "Drop The 'The'"
 ================
 
-Chrome extension that rolls back "Facebook" to "The facebook"
+Chrome extension that rolls back "Facebook" to "The Facebook"
 
 ![](sean.jpeg)
 
-[Adapted from](https://github.com/panicsteve/cloud-to-butt)
+Adapted from [https://github.com/panicsteve/cloud-to-butt](https://github.com/panicsteve/cloud-to-butt)
 
 Installation
 ------------
